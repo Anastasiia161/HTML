@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1_my_to_do_list.css">
+    <title>To do list</title>
+    <script src="https://kit.fontawesome.com/28ced0cf82.js" crossorigin="anonymous"></script>
+    <!-- присоединяемся к сайту и указываем с каким стилем будем работать -->
+    <style>
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+body {
+    margin-left: 30px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+ul {
+    width: 450px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px 10px 10px 14px;
+}
+
+del {
+    text-decoration: line-through;
+    background-color: rgba(255, 255, 255, 0);
+} 
+
+ul li::before { 
+    content: none;
+    content: '\f0c8';
+    padding: 0 20px 0 28px;
+    font-family: 'Fontawesome';
+} 
+
+li.color_wh::before { 
+    content: '\f14a';
+    font-family: 'Fontawesome';
+}  
+
+ul li::after { 
+    content: '\58';
+    padding-left: 20px;
+    color: #8c1100;
+    font-size:x-small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li:nth-child(odd) { /* нечетные */
+    background-color: #a5ccda;
+} 
+
+li:nth-child(even) { /* четные */
+    background-color: #add8e6;
+}    
+
+li.color_wh { /* зачеркнутые */
+    background-color: #e2e2e2;
+}
+ 
+    </style>
+</head>
+<body>
+    <h2>My To Do List</h2>
+    <ul>
+        <li>Hit the gym</li>
+        <li class="str color_wh"><del>Pay bills</del></li>
+        <li>Meet John</li>
+        <li>Buy eggs</li>
+        <li class="str color_wh"><del>Read a book</del></li>
+        <li>Organize office</li>
+        <li>Eat dinner</li>
+        <li>Buy apples</li>
+        <li>Meet George</li>
+        <li>Feed the cat</li>
+        <li class="str color_wh"><del>Write a letter</del></li>
+        <li>Run 1 km</li>
+    </ul>
+</body>
+</html>
