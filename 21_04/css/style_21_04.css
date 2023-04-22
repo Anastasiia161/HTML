@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+background: #FFFFFF;
+  /* margin: 0 auto; */
+}
+
+body {
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.22px;
+color: #4D5053;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  background: white;
+}
+.header__nav {
+  height: 74px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  gap: 2vw;
+  margin-left: 150px;
+  list-style: none;
+  height: 62px;
+left: 55.17%;
+right: 0%;
+top: 2rem;
+}
+.header__menu a {
+  text-decoration: none;
+  color: #222;
+}
+.header__menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(72, 202, 83);
+}
+.promo {
+ 
+  background: white url(/img/img_2.png) no-repeat;
+  background-size: cover;
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+    justify-content: start;
+    margin: 0rem 2rem 2rem 2rem;
+}
+.promo__text {
+  max-width: 650px;
+  margin-left:20% ;
+}
+.promo__text h1 {
+
+  font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 96px;
+margin-bottom: 20px;
+letter-spacing: 0.22px;
+text-align: left;
+color: #292F36;
+margin: 1rem 1rem;
+  
+}
+.group-buttons {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+}
+.button {
+  margin-top: 2rem;
+    width: 200px;
+    height: 60px;
+  border-radius: 20%;
+  border: 2px;
+  outline: none;
+  background: #383635;
+  color: white;
+  font-size: 20px;
+   text-align:center; 
+}
+.button::after{
+    content: '\f061';
+    font-family: 'Fontawesome';
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px #1bd12b;
+}
+.about{
+  width: 1240px;
+  height: 634px;
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.left_1{
+  display: inline-block;
+}
+
+.about-inner{
+  display: flex;
+}
+h2 {
+  
+  font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 65px;
+letter-spacing: 0.22px;
+color: #292F36;
+}
+
+.about__group > div {
+  width: 90%;
+  margin: 1rem 0;
+}
+.about__header {
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 50%;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.22px;
+justify-content:left;
+  align-items: center;
+color: #4D5053;
+}
+.tel{
+  width: 158px;
+	margin-top: auto;
+  height: 93px;
+  left: -20%;
+}
+.about__desc{
+
+    display:inline-block;
+  font-size: 20px;
+  margin: 1rem;
+  color: 222;
+  padding: 1rem 2rem;
+}
+.fon{
+  background: #F4F0EC;
+border-radius: 70px;
+  height: 675px;
+left: 5.49%;
+right: 11.18%;
+top: 1793px;
+}
+.people{
+  height: 74px;
+  display: inline-block;
+  justify-content:center;
+  align-items: center;
+}
+.zag{
+  margin: 2rem 2rem;
+}
+.people_number{
+height: 289px;
+left: 4.17%;
+right: 4.17%;
+top: 265.61px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.people-1{
+  height: 287px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+background: #FFFFFF;
+border-radius: 30px;
+padding: 1rem 2rem;
+margin: 2rem 2rem;
+
+}
+
+.blok-1{
+  display: flex;
+  height: 77px;
+left: 9.89%;
+right: 8.47%;
+top: 49.61px;
+
+}
+.blok-1_text{
+  display: inline-block;
+ 
+  justify-content:center;
+  align-items: start;
+  margin: 1rem 2rem;
+}
+h5{
+  font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 38px;
+letter-spacing: 0.22px;
+color: #292F36;
+}
+.blok-1_text p{
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.22px;
+color: #4D5053;
+margin: 0rem 1rem 2rem 0rem;
+}
+.blok-2{
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.22px;
+color: #4D5053;
+margin: 2rem 1rem ;
+}
+.zag h2{
+  font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.22px;
+color: #292F36;
+padding: 1rem 2rem 0 2rem;
+}
