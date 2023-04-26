@@ -1,0 +1,107 @@
+*{
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+   
+}
+.Name{
+    text-align: center;
+    background: gray;
+    font-size: 16px;
+    color: black;
+    
+}
+.doors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+.carcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background:transparent; 
+    width: 300px; height: 300px;
+    margin-right: 0%;
+    padding: 0 0;
+    transition: 1s;
+    perspective: 1000px;
+position: relative;
+
+}
+h2{
+   position: absolute;
+   z-index: -1;
+}
+.door-1{
+    
+    background: rgb(132, 19, 98);
+    border: 8px solid  rgb(92, 18, 70);
+    width: 90%; height: 90%;
+     transform-origin:left ;/*точка относительно которой фиксируется */
+     transition: 1s;
+     
+    
+}
+.door-2{
+    background: rgb(132, 19, 98);
+    border: 8px solid  rgb(92, 18, 70);
+    width: 90%; height: 90%;
+     transform-origin:right ;/*точка относительно которой фиксируется */
+     transition: 1s;
+}
+
+.carcas:hover .door-1{
+   transform: rotateY(50deg);
+    
+}
+.carcas:hover .door-2{
+    transform: rotateY(-50deg);
+}
+
+
+
+.clock_container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px; 
+}
+.clock{
+    border: 3px solid rgb(26, 143, 220);    
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            position: relative;    
+} 
+
+  .hours {
+    border: 2px solid rgb(26, 143, 220);
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    transform-origin: right;
+    animation: hours 60s linear infinite;
+  
+  }
+  .minutes{
+    border: 2px solid rgb(26, 143, 220);
+            width: 120px;
+            position: absolute;
+            top: 150px;
+            left: 10px;
+            transform-origin: right;
+            animation: minutes 10s linear infinite;
+  }
+  
+  @keyframes hours{
+    100%{transform: rotate(360deg);}
+    0%{transform: rotate(0deg);}
+   }
+
+   @keyframes minutes{
+    100%{transform: rotate(360deg);}
+    0%{transform: rotate(0deg);}
+   }
